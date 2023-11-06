@@ -963,7 +963,7 @@ namespace tsl {
 				static PlFontData stdFontData, extFontData;
 
 				// Nintendo's default font
-				if(R_FAILED(res = plGetSharedFontByType(&stdFontData, PlSharedFontType_Standard)))
+				if(R_FAILED(res = plGetSharedFontByType(&stdFontData, PlSharedFontType_ChineseSimplified)))
 					return res;
 
 				u8 *fontBuffer = reinterpret_cast<u8*>(stdFontData.address);
